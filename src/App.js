@@ -96,8 +96,8 @@ function App() {
       },
       {
         id: 'proj2',
-        title: 'Process Simulation Platform- Prototype', // Updated title
-        description: 'Revolutionizing Industrial Process Simulation – A Powerful Web-Based Platform 🚀 Bringing Advanced Simulation to Everyone, Work in progress.', // Updated description
+        title: 'Process Simulation Platform', // Updated title
+        description: 'Revolutionizing Industrial Process Simulation – A Powerful Web-Based Platform 🚀 Bringing Advanced Simulation to Everyone.', // Updated description
         thumbnail: 'https://drive.google.com/thumbnail?id=1hZKBStYP4MBcdPRtDl8FPQr37eanyM_Z&sz=w600', // New thumbnail for this project
         liveLink: 'https://testranjansim.vercel.app/', // UPDATED LIVE LINK
         githubLink: null, // GitHub link removed
@@ -114,8 +114,8 @@ function App() {
       },
       {
         id: 'proj4',
-        title: ' Future Prospects - Pipeline System Modeling',
-        description: 'develop leak detection solution for detecting leaks in long pipelines using method of characteristics model.',
+        title: 'Pipeline System Modeling',
+        description: 'Developed high-fidelity dynamic process models for extensive pipeline systems, including open channel and closed pipelines, used in large-scale industrial projects.',
         thumbnail: 'https://placehold.co/600x400/F59E0B/ffffff?text=Pipeline+Modeling',
         liveLink: '#',
         githubLink: null, // GitHub link removed
@@ -369,53 +369,24 @@ function App() {
         <section id="contact" className="py-16 md:py-24 bg-white">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Get in Touch</h2>
-            <div className="max-w-2xl mx-auto bg-gray-100 p-8 rounded-lg shadow-xl border border-gray-200">
-              <p className="text-center text-lg text-gray-700 mb-8">
+            <div className="max-w-2xl mx-auto bg-gray-100 p-8 rounded-lg shadow-xl text-center border border-gray-200">
+              <p className="text-lg text-gray-700 leading-relaxed mb-4">
                 I'm always open to new opportunities and collaborations. Feel free to reach out!
               </p>
-              <form className="space-y-6">
-                <div>
-                  <label htmlFor="contact-name" className="block text-sm font-medium text-gray-700 mb-1">Name</label>
-                  <input
-                    type="text"
-                    id="contact-name"
-                    name="name"
-                    className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                    placeholder="Your Name"
-                    required
-                  />
-                </div>
-                <div>
-                  <label htmlFor="contact-email-form" className="block text-sm font-medium text-gray-700 mb-1">Email</label>
-                  <input
-                    type="email"
-                    id="contact-email-form"
-                    name="email"
-                    className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                    placeholder="you@example.com"
-                    required
-                  />
-                </div>
-                <div>
-                  <label htmlFor="contact-message" className="block text-sm font-medium text-gray-700 mb-1">Message</label>
-                  <textarea
-                    id="contact-message"
-                    name="message"
-                    rows="5"
-                    className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                    placeholder="Your message..."
-                    required
-                  ></textarea>
-                </div>
-                <div className="text-center">
-                  <button
-                    type="submit"
-                    className="bg-indigo-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-indigo-700 transition duration-300 transform hover:scale-105 shadow-md"
-                  >
-                    Send Message
-                  </button>
-                </div>
-              </form>
+              <div className="space-y-2 mb-8">
+                <p className="text-gray-800 text-lg">
+                  <i className="fas fa-envelope text-indigo-500 mr-2"></i>
+                  <a href={`mailto:${portfolioData.contactEmail}`} className="text-indigo-600 hover:underline">
+                    {portfolioData.contactEmail}
+                  </a>
+                </p>
+                <p className="text-gray-800 text-lg">
+                  <i className="fab fa-linkedin text-indigo-500 mr-2"></i>
+                  <a href={portfolioData.linkedinUrl} target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">
+                    {portfolioData.linkedinUrl}
+                  </a>
+                </p>
+              </div>
             </div>
             <div className="flex justify-center space-x-6 mt-12 text-gray-600">
               <a href={portfolioData.linkedinUrl} target="_blank" rel="noopener noreferrer" className="hover:text-indigo-600 transition duration-300">
