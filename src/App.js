@@ -96,31 +96,23 @@ function App() {
       },
       {
         id: 'proj2',
-        title: 'Process Simulation Platform', // Updated title
-        description: 'Revolutionizing Industrial Process Simulation – A Powerful Web-Based Platform 🚀 Bringing Advanced Simulation to Everyone.', // Updated description
-        thumbnail: 'https://drive.google.com/thumbnail?id=1hZKBStYP4MBcdPRtDl8FPQr37eanyM_Z&sz=w600', // New thumbnail for this project
-        liveLink: 'https://testranjansim.vercel.app/', // UPDATED LIVE LINK
-        githubLink: null, // GitHub link removed
+        title: 'Prototype Project', // Renamed from 'Process Simulation Platform'
+        description: 'Revolutionizing Industrial Process Simulation – A Powerful Web-Based Platform 🚀 Bringing Advanced Simulation to Everyone.', // Description remains the same
+        thumbnail: 'https://drive.google.com/thumbnail?id=1hZKBStYP4MBcdPRtDl8FPQr37eanyM_Z&sz=w600', // Thumbnail remains the same
+        liveLink: 'https://testranjansim.vercel.app/', // Live link remains the same
+        githubLink: null, // GitHub link remains removed
         techStack: 'AI/ML, Process Optimization, Python'
       },
       {
         id: 'proj3',
-        title: 'P&ID Analyzer', // Updated title
-        description: 'This AI-powered desktop P&ID Analyzer lets you upload P&ID images or PDFs. Using Google\'s Gemini AI, it automatically extracts equipment, connections, and key simulation parameters, organizing them into clear tables for review. Requires a user-provided Google AI API key to run.', // Updated description
-        thumbnail: 'https://drive.google.com/thumbnail?id=1tmvkCTk7y54VjmVEt3V2kpHgLVMWX6Et&sz=w600', // New thumbnail for this project
-        liveLink: 'https://analyser-alpha.vercel.app/', // Set the live link for the 3rd project as well
-        githubLink: null, // GitHub link removed
-        techStack: 'AI, Document Analysis, Simulation Parameters' // Updated tech stack
-      },
-      {
-        id: 'proj4',
-        title: 'Pipeline System Modeling',
-        description: 'Developed high-fidelity dynamic process models for extensive pipeline systems, including open channel and closed pipelines, used in large-scale industrial projects.',
-        thumbnail: 'https://placehold.co/600x400/F59E0B/ffffff?text=Pipeline+Modeling',
-        liveLink: '#',
-        githubLink: null, // GitHub link removed
-        techStack: 'Dynamic Modeling, Fluid Dynamics, Process Simulation'
+        title: 'P&ID Analyzer',
+        description: 'This AI-powered desktop P&ID Analyzer lets you upload P&ID images or PDFs. Using Google\'s Gemini AI, it automatically extracts equipment, connections, and key simulation parameters, organizing them into clear tables for review. Requires a user-provided Google AI API key to run.',
+        thumbnail: 'https://drive.google.com/thumbnail?id=1tmvkCTk7y54VjmVEt3V2kpHgLVMWX6Et&sz=w600',
+        liveLink: 'https://analyser-alpha.vercel.app/',
+        githubLink: null,
+        techStack: 'AI, Document Analysis, Simulation Parameters'
       }
+      // Project with id 'proj4' (Pipeline System Modeling) is now removed
     ],
     contactEmail: 'ranjanoa@gmail.com',
     linkedinUrl: 'https://linkedin.com/in/ranjanoa',
@@ -159,7 +151,7 @@ function App() {
         <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
           {/* Logo/Name */}
           <a href="#home" onClick={() => scrollToSection('home')} className="text-2xl font-bold text-indigo-600 hover:text-indigo-700 transition duration-300 rounded-md p-2">
-            Ranjan Appanna
+            Ranjan Ottemada Appanna {/* Changed to full name */}
           </a>
 
           {/* Desktop Navigation Links */}
@@ -169,7 +161,7 @@ function App() {
             <NavLink id="experience" label="Experience" activeSection={activeSection} onClick={scrollToSection} />
             <NavLink id="skills" label="Skills" activeSection={activeSection} onClick={scrollToSection} />
             <NavLink id="photos" label="Photos" activeSection={activeSection} onClick={scrollToSection} />
-            <NavLink id="projects" label="Projects Demo" activeSection={activeSection} onClick={scrollToSection} />
+            <NavLink id="projects" label="Personal Projects" activeSection={activeSection} onClick={scrollToSection} />
             <NavLink id="contact" label="Contact" activeSection={activeSection} onClick={scrollToSection} />
           </div>
 
@@ -193,7 +185,7 @@ function App() {
             <NavLink id="experience" label="Experience" activeSection={activeSection} onClick={scrollToSection} mobile />
             <NavLink id="skills" label="Skills" activeSection={activeSection} onClick={scrollToSection} mobile />
             <NavLink id="photos" label="Photos" activeSection={activeSection} onClick={scrollToSection} mobile />
-            <NavLink id="projects" label="Projects Demo" activeSection={activeSection} onClick={scrollToSection} mobile />
+            <NavLink id="projects" label="Personal Projects" activeSection={activeSection} onClick={scrollToSection} mobile />
             <NavLink id="contact" label="Contact" activeSection={activeSection} onClick={scrollToSection} mobile />
           </div>
         )}
@@ -205,7 +197,7 @@ function App() {
         <section id="home" className="container mx-auto px-4 py-20 md:py-32 flex flex-col md:flex-row items-center justify-center min-h-[calc(100vh-80px)]">
           <div className="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
             <h1 className="text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-4">
-              Hi, I'm <span className="text-indigo-600">Ranjan Ottemada Appanna</span>
+              Hi, I'm <span className="text-indigo-600">Ranjan</span> {/* Changed to just Ranjan */}
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-6">
               An <span className="font-semibold text-indigo-500">Experienced Professional in the Simulation Domain</span>,
@@ -278,16 +270,7 @@ function App() {
                 ))}
               </div>
             </div>
-            <div className="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed space-y-6 mt-12">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Honors & Awards</h3>
-              {portfolioData.honors.map((honor) => (
-                <div key={honor.id} className="bg-gray-100 p-6 rounded-lg shadow-sm">
-                  <p className="font-semibold">{honor.award}</p>
-                  <p className="text-gray-600">{honor.date}</p>
-                  <p>{honor.description}</p>
-                </div>
-              ))}
-            </div>
+            {/* Honors & Awards section removed */}
           </div>
         </section>
 
@@ -314,7 +297,7 @@ function App() {
         {/* Projects Section */}
         <section id="projects" className="py-16 md:py-24 bg-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Projects Demo</h2>
+            <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Personal Projects</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {portfolioData.projects.map((project) => (
                 <div key={project.id} className="bg-white rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition duration-300 border border-gray-200">
