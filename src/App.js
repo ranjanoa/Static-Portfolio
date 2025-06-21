@@ -8,7 +8,7 @@ function App() {
   // Hardcoded Portfolio Data
   // ALL CONTENT IS DEFINED HERE. To change anything, you must edit this code.
   const portfolioData = {
-    summary: `Ranjan Ottemada Appanna is an Experienced Professional with a demonstrated history of working in the Simulation Domain. He is skilled in Process Optimisation, Process Simulation, and Digital Twins. With over 16 years of expertise in process simulation, digital twins, and engineering optimization, Ranjan is passionate about leveraging data-driven engineering to optimize industrial operations. His experience spans leading the delivery of advanced process simulation solutions for the minerals , pulp and paper and PowerPlant industry, implementing AI-driven optimization solutions for mining processes, and developing high-fidelity dynamic process models for complex industrial operations.`,
+    summary: `Ranjan Ottemada Appanna is an Experienced Professional with a demonstrated history of working in the Process Simulation Domain. He is skilled in Process Optimisation, Process Simulation, and Digital Twins. With over 16 years of expertise in process simulation, digital twins, and engineering optimization, Ranjan is passionate about leveraging data-driven engineering to optimize industrial operations. His experience spans leading the delivery of advanced process simulation solutions for the minerals , pulp and paper and PowerPlant industry, implementing AI-driven optimization solutions for mining processes, and developing high-fidelity dynamic process models for complex industrial operations.`,
     experience: [
       {
         id: 'job1',
@@ -111,8 +111,16 @@ function App() {
         liveLink: 'https://analyser-alpha.vercel.app/',
         githubLink: null,
         techStack: 'AI, Document Analysis, Simulation Parameters'
+      },
+      {
+        id: 'proj4',
+        title: 'HydroSense Pipeline Monitor: Leak Detection & Analysis', // New project title
+        description: 'HydroSense is a web-based application designed to simulate and monitor pipeline hydraulic behavior, with a focus on real-time leak detection and analysis. It utilizes the **Method of Characteristics (MOC)** to model transient flow conditions within the pipeline.', // New project description
+        thumbnail: 'https://drive.google.com/thumbnail?id=1T_I0DpH3cpx3IGOxTZrjmDEucrFRw_gb&sz=w600', // UPDATED thumbnail
+        liveLink: 'https://hydrosense-app-repo-nd6h.vercel.app/', // New live demo link
+        githubLink: null, // GitHub link removed
+        techStack: 'Hydraulic Simulation, MOC, Real-time Monitoring, Leak Detection' // New tech stack
       }
-      // Project with id 'proj4' (Pipeline System Modeling) is now removed
     ],
     contactEmail: 'ranjanoa@gmail.com',
     linkedinUrl: 'https://linkedin.com/in/ranjanoa',
@@ -151,7 +159,7 @@ function App() {
         <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
           {/* Logo/Name */}
           <a href="#home" onClick={() => scrollToSection('home')} className="text-2xl font-bold text-indigo-600 hover:text-indigo-700 transition duration-300 rounded-md p-2">
-            Ranjan Ottemada Appanna {/* Changed to full name */}
+            Ranjan Ottemada Appanna
           </a>
 
           {/* Desktop Navigation Links */}
@@ -197,7 +205,7 @@ function App() {
         <section id="home" className="container mx-auto px-4 py-20 md:py-32 flex flex-col md:flex-row items-center justify-center min-h-[calc(100vh-80px)]">
           <div className="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
             <h1 className="text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-4">
-              Hi, I'm <span className="text-indigo-600">Ranjan</span> {/* Changed to just Ranjan */}
+              Hi, I'm <span className="text-indigo-600">Ranjan</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-6">
               An <span className="font-semibold text-indigo-500">Experienced Professional in the Simulation Domain</span>,
