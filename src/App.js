@@ -8,7 +8,7 @@ function App() {
   // Hardcoded Portfolio Data
   // ALL CONTENT IS DEFINED HERE. To change anything, you must edit this code.
   const portfolioData = {
-    summary: `Ranjan Ottemada Appanna is an Experienced Professional with a demonstrated history of working in the Process Simulation Domain. He is skilled in Process Optimisation, Process Simulation, and Digital Twins. With over 16 years of expertise in process simulation, digital twins, and engineering optimization, Ranjan is passionate about leveraging data-driven engineering to optimize industrial operations. His experience spans leading the delivery of advanced process simulation solutions for the minerals , pulp and paper and PowerPlant industry, implementing AI-driven optimization solutions for mining processes, and developing high-fidelity dynamic process models for complex industrial operations.`,
+    summary: `Ranjan Ottemada Appanna is an Experienced Professional with a demonstrated history of working in the Simulation Domain. He is skilled in Process Optimisation, Process Simulation, and Digital Twins. With over 16 years of expertise in process simulation, digital twins, and engineering optimization, Ranjan is passionate about leveraging data-driven engineering to optimize industrial operations. His experience spans leading the delivery of advanced process simulation solutions for the minerals , pulp and paper and PowerPlant industry, implementing AI-driven optimization solutions for mining processes, and developing high-fidelity dynamic process models for complex industrial operations.`,
     experience: [
       {
         id: 'job1',
@@ -116,7 +116,7 @@ function App() {
         id: 'proj4',
         title: 'HydroSense Pipeline Monitor: Leak Detection & Analysis', // New project title
         description: 'HydroSense is a web-based application designed to simulate and monitor pipeline hydraulic behavior, with a focus on real-time leak detection and analysis. It utilizes the **Method of Characteristics (MOC)** to model transient flow conditions within the pipeline.', // New project description
-        thumbnail: 'https://drive.google.com/thumbnail?id=1T_I0DpH3cpx3IGOxTZrjmDEucrFRw_gb&sz=w600', // UPDATED thumbnail
+        thumbnail: 'https://drive.google.com/thumbnail?id=1xqFWNVlDkJJwq8q7P_6FGlhqkCQ7TLCa&sz=w600', // UPDATED thumbnail
         liveLink: 'https://hydrosense-app-repo-nd6h.vercel.app/', // New live demo link
         githubLink: null, // GitHub link removed
         techStack: 'Hydraulic Simulation, MOC, Real-time Monitoring, Leak Detection' // New tech stack
