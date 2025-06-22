@@ -107,7 +107,7 @@ function App() {
         id: 'proj3',
         title: 'P&ID Analyzer',
         description: 'This AI-powered desktop P&ID Analyzer lets you upload P&ID images or PDFs. Using Google\'s Gemini AI, it automatically extracts equipment, connections, and key simulation parameters, organizing them into clear tables for review. Requires a user-provided Google AI API key to run.',
-        thumbnail: 'https://drive.google.com/thumbnail?id=1tmvkCTk7y54VjmVEt3V2kpHgLVMWX6Et&sz=w600',
+        thumbnail: 'https://drive.google.com/thumbnail?id=1L-L0ivvqoZNc_BRZig7rOL5Az6cRkiux&sz=w600', // UPDATED thumbnail for proj3
         liveLink: 'https://analyser-alpha.vercel.app/',
         githubLink: null,
         techStack: 'AI, Document Analysis, Simulation Parameters'
