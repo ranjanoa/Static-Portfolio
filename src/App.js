@@ -107,7 +107,7 @@ function App() {
         id: 'proj3',
         title: 'P&ID Analyzer',
         description: 'This AI-powered desktop P&ID Analyzer lets you upload P&ID images or PDFs. Using Google\'s Gemini AI, it automatically extracts equipment, connections, and key simulation parameters, organizing them into clear tables for review. Requires a user-provided Google AI API key to run.',
-        thumbnail: 'https://drive.google.com/thumbnail?id=1L-L0ivvqoZNc_BRZig7rOL5Az6cRkiux&sz=w600', // UPDATED thumbnail for proj3
+        thumbnail: 'https://drive.google.com/thumbnail?id=1L-L0ivvqoZNc_BRZig7rOL5Az6cRkiux&sz=w600',
         liveLink: 'https://analyser-alpha.vercel.app/',
         githubLink: null,
         techStack: 'AI, Document Analysis, Simulation Parameters'
@@ -224,6 +224,15 @@ function App() {
               >
                 Get in Touch
               </button>
+              {/* CV Download Button */}
+              <a
+                href="https://drive.google.com/uc?export=download&id=18vBgSzu94-m9JEs0IO5wBuZZ_zFLBgAs" // Updated for direct download
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center"
+              >
+                <i className="fas fa-file-alt mr-2"></i> Download CV
+              </a>
             </div>
           </div>
           <div className="md:w-1/2 flex justify-center">
@@ -308,7 +317,7 @@ function App() {
             <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Personal Projects</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {portfolioData.projects.map((project) => (
-                <div key={project.id} className="bg-white rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition duration-300 border border-gray-200">
+                <div key={project.id} className="bg-white rounded-lg shadow-xl overflow-hidden transform hover:scale-[1.01] transition duration-300 border border-gray-200">
                   <img
                     src={project.thumbnail} // This will now use the specific thumbnail for each project
                     alt={project.title}
