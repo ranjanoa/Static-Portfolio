@@ -318,7 +318,7 @@ function App() {
             <NavLink id="about" label="About" activeSection={activeSection} onClick={scrollToSection} />
             <NavLink id="experience" label="Experience" activeSection={activeSection} onClick={scrollToSection} />
             <NavLink id="skills" label="Skills" activeSection={activeSection} onClick={scrollToSection} />
-            <NavLink id="photos" label="Photos" activeSection={activeSection} onClick={scrollToSection} />
+            {/* Removed Photos NavLink */}
             <NavLink id="projects" label="Personal Projects" activeSection={activeSection} onClick={scrollToSection} />
             <NavLink id="contact" label="Contact" activeSection={activeSection} onClick={scrollToSection} />
           </div>
@@ -342,7 +342,7 @@ function App() {
             <NavLink id="about" label="About" activeSection={activeSection} onClick={scrollToSection} mobile />
             <NavLink id="experience" label="Experience" activeSection={activeSection} onClick={scrollToSection} mobile />
             <NavLink id="skills" label="Skills" activeSection={activeSection} onClick={scrollToSection} mobile />
-            <NavLink id="photos" label="Photos" activeSection={activeSection} onClick={scrollToSection} mobile />
+            {/* Removed Photos NavLink */}
             <NavLink id="projects" label="Personal Projects" activeSection={activeSection} onClick={scrollToSection} mobile />
             <NavLink id="contact" label="Contact" activeSection={activeSection} onClick={scrollToSection} mobile />
           </div>
@@ -388,7 +388,7 @@ function App() {
                 </a>
               </div>
             </div>
-            <div className="md:w-1/2 flex justify-center mt-8 md:mt-0">
+            <div className="md:w-1/2 flex justify-center">
               <img
                 src={portfolioData.profilePhotoUrl}
                 alt="Ranjan Ottemada Appanna"
@@ -402,11 +402,11 @@ function App() {
           {portfolioData.projects.length > 0 && ( /* Only render if there are projects */
             <div className="w-full flex items-center justify-center py-8 md:py-12">
               <div className="project-showcase-container">
+                {/* This uses React's key prop for smooth transitions */}
                 {portfolioData.projects.map((project, index) => (
                   <div
-                    key={project.id}
-                    // Using inline style for opacity to control fade transition via React state
-                    // Also managing z-index to ensure only the active project is fully visible
+                    key={project.id} // Essential for React to identify elements for transitions
+                    // Set class 'active' based on currentProjectIndex for CSS transition
                     style={{ opacity: index === currentProjectIndex ? 1 : 0, zIndex: index === currentProjectIndex ? 10 : 1 }}
                     className={`project-showcase-card`}
                   >
@@ -489,8 +489,8 @@ function App() {
           </div>
         </section>
 
-        {/* Photo Section */}
-        <section id="photos" className="bg-gray-900 py-16 md:py-24 text-gray-100">
+        {/* Photo Section (Hidden) */}
+        {/* <section id="photos" className="bg-gray-900 py-16 md:py-24 text-gray-100">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold text-center text-teal-400 mb-12">My Photo</h2>
             <div className="max-w-xl mx-auto bg-gray-800 p-8 rounded-lg shadow-xl text-center border border-teal-700">
@@ -507,7 +507,7 @@ function App() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Projects Section */}
         <section id="projects" className="bg-gray-800 py-16 md:py-24 text-gray-100">
