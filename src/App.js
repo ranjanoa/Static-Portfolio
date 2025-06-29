@@ -96,16 +96,7 @@ function App() {
         techStack: 'Python, Simulation Software, Data Analytics, Digital Twins'
       },
       {
-        id: 'proj2',
-        title: 'Prototype Project', // Renamed from 'Process Simulation Platform'
-        description: 'Revolutionizing Industrial Process Simulation – A Powerful Web-Based Platform 🚀 Bringing Advanced Simulation to Everyone.', // Description remains the same
-        thumbnail: 'https://drive.google.com/thumbnail?id=1hZKBStYP4MBcdPRtDl8FPQr37eanyM_Z&sz=w600', // Thumbnail remains the same
-        liveLink: 'https://testranjansim.vercel.app/', // Live link remains the same
-        githubLink: null, // GitHub link remains removed
-        techStack: 'AI/ML, Process Optimization, Python'
-      },
-      {
-        id: 'proj3',
+        id: 'proj3', // This was originally proj3, now it will be the second project
         title: 'P&ID Analyzer',
         description: 'This AI-powered desktop P&ID Analyzer lets you upload P&ID images or PDFs. Using Google\'s Gemini AI, it automatically extracts equipment, connections, and key simulation parameters, organizing them into clear tables for review. Requires a user-provided Google AI API key to run.',
         thumbnail: 'https://drive.google.com/thumbnail?id=1L-L0ivvqoZNc_BRZig7rOL5Az6cRkiux&sz=w600',
@@ -114,13 +105,31 @@ function App() {
         techStack: 'AI, Document Analysis, Simulation Parameters'
       },
       {
-        id: 'proj4',
-        title: 'HydroSense Pipeline Monitor: Leak Detection & Analysis', // New project title
-        description: 'HydroSense is a web-based application designed to simulate and monitor pipeline hydraulic behavior, with a focus on real-time leak detection and analysis. It utilizes the **Method of Characteristics (MOC)** to model transient flow conditions within the pipeline.', // New project description
-        thumbnail: 'https://drive.google.com/thumbnail?id=1xqFWNVlDkJJwq8q7P_6FGlhqkCQ7TLCa&sz=w600', // UPDATED thumbnail
-        liveLink: 'https://hydrosense-app-repo-nd6h.vercel.app/', // New live demo link
-        githubLink: null, // GitHub link removed
-        techStack: 'Hydraulic Simulation, MOC, Real-time Monitoring, Leak Detection' // New tech stack
+        id: 'proj4', // This was originally proj4, now it will be the third project
+        title: 'HydroSense Pipeline Monitor: Leak Detection & Analysis',
+        description: 'HydroSense is a web-based application designed to simulate and monitor pipeline hydraulic behavior, with a focus on real-time leak detection and analysis. It utilizes the **Method of Characteristics (MOC)** to model transient flow conditions within the pipeline.',
+        thumbnail: 'https://drive.google.com/thumbnail?id=1xqFWNVlDkJJwq8q7P_6FGlhqkCQ7TLCa&sz=w600',
+        liveLink: 'https://hydrosense-app-repo-nd6h.vercel.app/',
+        githubLink: null,
+        techStack: 'Hydraulic Simulation, MOC, Real-time Monitoring, Leak Detection'
+      },
+      {
+        id: 'proj5', // New 5th project, placed before the last one (proj2)
+        title: 'Concentrator Value Modelling',
+        description: 'This tool is designed to help metallurgists, plant managers, and engineers model the financial and environmental impact of potential process improvements in a mineral concentrator plant. By defining a baseline scenario and then selecting various technological solutions, users can quantify benefits in terms of increased revenue, cost savings, CO2 reduction, and overall project ROI. This allows for data-driven decision-making when evaluating capital projects and new technologies.',
+        thumbnail: 'https://drive.google.com/thumbnail?id=18ZbyUebl2r0uepCg9Kg73fqMlo9j8Hve&sz=w600', // New thumbnail
+        liveLink: 'https://concentrator-value-modelling-ig2m.vercel.app/',
+        githubLink: null, // No GitHub link
+        techStack: 'Financial Modeling, Environmental Impact, Process Improvement, ROI Analysis'
+      },
+      {
+        id: 'proj2', // Moved to last position
+        title: 'Prototype Project',
+        description: 'Revolutionizing Industrial Process Simulation – A Powerful Web-Based Platform 🚀 Bringing Advanced Simulation to Everyone.',
+        thumbnail: 'https://drive.google.com/thumbnail?id=1hZKBStYP4MBcdPRtDl8FPQr37eanyM_Z&sz=w600',
+        liveLink: 'https://testranjansim.vercel.app/',
+        githubLink: null,
+        techStack: 'AI/ML, Process Optimization, Python'
       }
     ],
     contactEmail: 'ranjanoa@gmail.com',
@@ -408,7 +417,7 @@ function App() {
                     key={project.id} // Essential for React to identify elements for transitions
                     // Set class 'active' based on currentProjectIndex for CSS transition
                     style={{ opacity: index === currentProjectIndex ? 1 : 0, zIndex: index === currentProjectIndex ? 10 : 1 }}
-                    className={`project-showcase-card`}
+                    className={`project-showcase-card ${index === currentProjectIndex ? 'active' : ''}`}
                   >
                     <div className="project-showcase-image-wrapper">
                       <img
